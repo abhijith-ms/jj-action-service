@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .heading-font {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  
+  .body-font {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  .accent-font {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+}
