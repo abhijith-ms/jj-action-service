@@ -6,7 +6,8 @@ import {
   Home, 
   Paintbrush, 
   Hammer, 
-  Shield 
+  Shield,
+  Sparkles
 } from "lucide-react"
 
 const services = [
@@ -51,6 +52,12 @@ const services = [
     title: "General Repairs",
     description: "Versatile repair services for various household and commercial needs.",
     features: ["Appliance Repair", "Fixture Installation", "Door & Window Repair", "General Maintenance"]
+  },
+  {
+    icon: Sparkles,
+    title: "House Keeping/Cleaning",
+    description: "Professional cleaning services for homes and offices to maintain a spotless environment.",
+    features: ["Deep Cleaning", "Regular Maintenance", "Office Cleaning", "Move-in/Move-out"]
   },
   {
     icon: Shield,
