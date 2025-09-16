@@ -38,9 +38,14 @@ export default function Header() {
                 alt="JJ Action Services Logo" 
                 className="h-12 w-auto"
               />
-              <span className="text-xl font-bold font-heading text-navy hidden sm:block">
-                JJ Action Services
-              </span>
+              <div className="hidden sm:block">
+                <span className="text-xl font-extrabold font-heading bg-gradient-to-r from-primary via-navy to-primary bg-clip-text text-transparent tracking-tight">
+                  JJ Action
+                </span>
+                <span className="text-xl font-bold font-heading text-navy ml-1">
+                  Services
+                </span>
+              </div>
             </button>
           </div>
 
