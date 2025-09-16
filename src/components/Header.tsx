@@ -67,8 +67,15 @@ export default function Header() {
             </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile CTA Button and Menu */}
+          <div className="md:hidden flex items-center space-x-3">
+            <Button 
+              onClick={() => scrollToSection('contact')}
+              size="sm"
+              className="bg-primary hover:bg-primary-600 font-accent font-medium text-sm px-4 py-2"
+            >
+              Contact Us
+            </Button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-cool-gray hover:text-primary transition-colors"
@@ -91,14 +98,6 @@ export default function Header() {
                   {item.label}
                 </button>
               ))}
-              <div className="pt-2">
-                <Button 
-                  onClick={() => scrollToSection('contact')}
-                  className="w-full bg-primary hover:bg-primary-600 font-accent font-medium"
-                >
-                  Contact Us
-                </Button>
-              </div>
             </div>
           </div>
         )}
