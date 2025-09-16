@@ -117,10 +117,6 @@ export default function Footer() {
                 Licensed & Insured
               </span>
               <span className="flex items-center">
-                <div className="w-2 h-2 bg-primary rounded-full mr-2"></div>
-                500+ Happy Customers
-              </span>
-              <span className="flex items-center">
                 <div className="w-2 h-2 bg-terracotta rounded-full mr-2"></div>
                 24/7 Emergency Service
               </span>

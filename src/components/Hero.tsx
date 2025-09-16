@@ -82,28 +82,11 @@ export default function Hero() {
               size="lg"
               className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg font-medium font-accent transition-all duration-300"
             >
-              Get Free Quote
+              Contact Us
             </Button>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-16 pt-8 border-t border-cool-gray/20">
-            <p className="text-sm font-body text-cool-gray mb-4">Trusted by customers across Portugal</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 text-cool-gray">
-              <div className="text-center">
-                <div className="text-2xl font-bold font-heading text-primary">500+</div>
-                <div className="text-xs font-body">Happy Customers</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold font-heading text-primary">8</div>
-                <div className="text-xs font-body">Service Types</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold font-heading text-primary">24/7</div>
-                <div className="text-xs font-body">Support</div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>

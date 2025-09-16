@@ -63,7 +63,7 @@ export default function Header() {
               onClick={() => scrollToSection('contact')}
               className="bg-primary hover:bg-primary-600 font-accent font-medium"
             >
-              Get Quote
+              Contact Us
             </Button>
           </div>
 
@@ -96,7 +96,7 @@ export default function Header() {
                   onClick={() => scrollToSection('contact')}
                   className="w-full bg-primary hover:bg-primary-600 font-accent font-medium"
                 >
-                  Get Quote
+                  Contact Us
                 </Button>
               </div>
             </div>
