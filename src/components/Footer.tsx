@@ -19,9 +19,12 @@ export default function Footer() {
               Professional services you can trust. From electrical work to carpentry, 
               we provide reliable solutions across Portugal.
             </p>
-            <div className="flex items-center space-x-2 text-sm font-body text-cool-gray">
-              <MapPin className="w-4 h-4" />
-              <span>Serving all of Portugal</span>
+            <div className="space-y-1 text-sm font-body text-cool-gray">
+              <div className="flex items-center space-x-2">
+                <MapPin className="w-4 h-4" />
+                <span>Rua da Sofia, 1 ESQ</span>
+              </div>
+              <div className="ml-6">4705-453 Celeiros</div>
             </div>
           </div>
 
@@ -35,6 +38,7 @@ export default function Footer() {
               <li>Home Maintenance</li>
               <li>Carpentry Services</li>
               <li>Painting Services</li>
+              <li>House Keeping/Cleaning</li>
               <li>General Repairs</li>
               <li>Emergency Services</li>
             </ul>
@@ -87,7 +91,7 @@ export default function Footer() {
             <div className="space-y-3 text-sm font-body text-cool-gray">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+351 XXX XXX XXX</span>
+                <span>+351 912 628 050</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-emerald" />

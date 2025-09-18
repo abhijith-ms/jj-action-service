@@ -29,7 +29,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold font-heading text-navy mb-1">Phone</h4>
-                    <p className="font-body text-cool-gray">+351 XXX XXX XXX</p>
+                    <p className="font-body text-cool-gray">+351 912 628 050</p>
                     <p className="text-sm font-body text-cool-gray">Available 24/7 for emergencies</p>
                   </div>
                 </div>
@@ -50,9 +50,10 @@ export default function Contact() {
                     <MapPin className="w-6 h-6 text-terracotta" />
                   </div>
                   <div>
-                    <h4 className="font-semibold font-heading text-navy mb-1">Service Areas</h4>
-                    <p className="font-body text-cool-gray">Lisbon, Porto, Braga, Coimbra</p>
-                    <p className="text-sm font-body text-cool-gray">Serving all major cities in Portugal</p>
+                    <h4 className="font-semibold font-heading text-navy mb-1">Address</h4>
+                    <p className="font-body text-cool-gray">Rua da Sofia, 1 ESQ</p>
+                    <p className="font-body text-cool-gray">4705-453 Celeiros</p>
+                    <p className="text-sm font-body text-cool-gray">Serving all of Portugal</p>
                   </div>
                 </div>
 
