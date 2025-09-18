@@ -40,7 +40,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold font-heading text-navy mb-1">Email</h4>
-                    <p className="font-body text-cool-gray">info@jjactionservices.pt</p>
+                    <p className="font-body text-cool-gray">info@jjactionservices.com</p>
                     <p className="text-sm font-body text-cool-gray">We'll respond within 2 hours</p>
                   </div>
                 </div>

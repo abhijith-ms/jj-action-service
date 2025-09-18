@@ -91,7 +91,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-emerald" />
-                <span>info@jjactionservices.pt</span>
+                <span>info@jjactionservices.com</span>
               </div>
               <div className="flex items-start space-x-3">
                 <Clock className="w-4 h-4 text-terracotta mt-0.5" />
