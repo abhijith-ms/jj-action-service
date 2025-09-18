@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react"
 
 export default function Contact() {
 
@@ -57,17 +57,7 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Clock className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold font-heading text-navy mb-1">Business Hours</h4>
-                    <p className="font-body text-cool-gray">Mon-Fri: 8:00 AM - 6:00 PM</p>
-                    <p className="font-body text-cool-gray">Sat: 9:00 AM - 4:00 PM</p>
-                    <p className="text-sm font-body text-cool-gray">Emergency services available 24/7</p>
-                  </div>
-                </div>
+                
               </div>
 
               <div className="bg-light-gray/30 rounded-lg p-6">

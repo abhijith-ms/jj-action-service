@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react"
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -97,14 +97,7 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-emerald" />
                 <span>info@jjactionservices.com</span>
               </div>
-              <div className="flex items-start space-x-3">
-                <Clock className="w-4 h-4 text-terracotta mt-0.5" />
-                <div>
-                  <div>Mon-Fri: 8AM-6PM</div>
-                  <div>Sat: 9AM-4PM</div>
-                  <div className="text-xs text-primary">24/7 Emergency</div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>

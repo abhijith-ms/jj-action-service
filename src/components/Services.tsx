@@ -75,10 +75,7 @@ export default function Services() {
           <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy mb-4">
             Our Professional Services
           </h2>
-          <p className="text-lg font-body text-cool-gray max-w-2xl mx-auto">
-            From electrical work to carpentry, plumbing to car repairs - JJ Action Services 
-            provides reliable, skilled professionals for all your service needs in Portugal.
-          </p>
+          
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
