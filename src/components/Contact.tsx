@@ -29,7 +29,12 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold font-heading text-navy mb-1">Phone</h4>
-                    <p className="font-body text-cool-gray">+351 912 628 050</p>
+                    <a 
+                      href="tel:+351912628050" 
+                      className="font-body text-cool-gray hover:text-primary transition-colors cursor-pointer"
+                    >
+                      +351 912 628 050
+                    </a>
                     <p className="text-sm font-body text-cool-gray">Available 24/7 for emergencies</p>
                   </div>
                 </div>
@@ -40,7 +45,12 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold font-heading text-navy mb-1">Email</h4>
-                    <p className="font-body text-cool-gray">info@jjactionservices.com</p>
+                    <a 
+                      href="mailto:info@jjactionservices.com" 
+                      className="font-body text-cool-gray hover:text-primary transition-colors cursor-pointer"
+                    >
+                      info@jjactionservices.com
+                    </a>
                     <p className="text-sm font-body text-cool-gray">We'll respond within 2 hours</p>
                   </div>
                 </div>

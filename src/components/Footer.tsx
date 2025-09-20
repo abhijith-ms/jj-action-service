@@ -1,12 +1,12 @@
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <footer className="bg-navy text-white py-12">
@@ -14,10 +14,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold font-heading mb-4">JJ Action Services</h3>
+            <h3 className="text-xl font-bold font-heading mb-4">
+              JJ Action Services
+            </h3>
             <p className="font-body text-cool-gray mb-4 text-sm leading-relaxed">
-              Professional services you can trust. From electrical work to carpentry, 
-              we provide reliable solutions across Portugal.
+              Professional services you can trust. From electrical work to
+              carpentry, we provide reliable solutions across Portugal.
             </p>
             <div className="space-y-1 text-sm font-body text-cool-gray">
               <div className="flex items-center space-x-2">
@@ -30,7 +32,9 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold font-heading mb-4">Our Services</h4>
+            <h4 className="text-lg font-semibold font-heading mb-4">
+              Our Services
+            </h4>
             <ul className="space-y-2 text-sm font-body text-cool-gray">
               <li>Electrical Services</li>
               <li>Plumbing Services</li>
@@ -46,27 +50,29 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold font-heading mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold font-heading mb-4">
+              Quick Links
+            </h4>
             <ul className="space-y-2 text-sm font-body text-cool-gray">
               <li>
-                <button 
-                  onClick={() => scrollToSection('hero')}
+                <button
+                  onClick={() => scrollToSection("hero")}
                   className="hover:text-primary transition-colors"
                 >
                   Home
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('services')}
+                <button
+                  onClick={() => scrollToSection("services")}
                   className="hover:text-primary transition-colors"
                 >
                   Services
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('contact')}
+                <button
+                  onClick={() => scrollToSection("contact")}
                   className="hover:text-primary transition-colors"
                 >
                   Contact
@@ -87,17 +93,28 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold font-heading mb-4">Contact Info</h4>
+            <h4 className="text-lg font-semibold font-heading mb-4">
+              Contact Info
+            </h4>
             <div className="space-y-3 text-sm font-body text-cool-gray">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-primary" />
-                <span>+351 912 628 050</span>
+                <a 
+                  href="tel:+351912628050" 
+                  className="hover:text-primary transition-colors cursor-pointer"
+                >
+                  +351 912 628 050
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-emerald" />
-                <span>info@jjactionservices.com</span>
+                <a 
+                  href="mailto:info@jjactionservices.com" 
+                  className="hover:text-primary transition-colors cursor-pointer"
+                >
+                  info@jjactionservices.com
+                </a>
               </div>
-              
             </div>
           </div>
         </div>
@@ -122,5 +139,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
