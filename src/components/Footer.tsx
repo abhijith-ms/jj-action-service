@@ -99,8 +99,8 @@ export default function Footer() {
             <div className="space-y-3 text-sm font-body text-cool-gray">
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-primary" />
-                <a 
-                  href="tel:+351912628050" 
+                <a
+                  href="tel:+351912628050"
                   className="hover:text-primary transition-colors cursor-pointer"
                 >
                   +351 912 628 050
@@ -108,11 +108,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-emerald" />
-                <a 
-                  href="mailto:info@jjactionservices.com" 
+                <a
+                  href="mailto:Info@jjactionservices.com"
                   className="hover:text-primary transition-colors cursor-pointer"
                 >
-                  info@jjactionservices.com
+                  Info@jjactionservices.com
                 </a>
               </div>
             </div>

@@ -46,10 +46,10 @@ export default function Contact() {
                   <div>
                     <h4 className="font-semibold font-heading text-navy mb-1">Email</h4>
                     <a 
-                      href="mailto:info@jjactionservices.com" 
+                      href="mailto:Info@jjactionservices.com" 
                       className="font-body text-cool-gray hover:text-primary transition-colors cursor-pointer"
                     >
-                      info@jjactionservices.com
+                      Info@jjactionservices.com
                     </a>
                     <p className="text-sm font-body text-cool-gray">We'll respond within 2 hours</p>
                   </div>
