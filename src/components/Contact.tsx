@@ -45,26 +45,12 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold font-heading text-navy mb-1">Email</h4>
-                    <div className="space-y-1">
-                      <a 
-                        href="mailto:info@jjactionservices.com" 
-                        className="block font-body text-cool-gray hover:text-primary transition-colors cursor-pointer"
-                      >
-                        info@jjactionservices.com
-                      </a>
-                      <a 
-                        href="mailto:james@jjactionservices.com" 
-                        className="block font-body text-cool-gray hover:text-primary transition-colors cursor-pointer"
-                      >
-                        james@jjactionservices.com
-                      </a>
-                      <a 
-                        href="mailto:mariajoaofernandes@jjactionservices.com" 
-                        className="block font-body text-cool-gray hover:text-primary transition-colors cursor-pointer"
-                      >
-                        mariajoaofernandes@jjactionservices.com
-                      </a>
-                    </div>
+                    <a 
+                      href="mailto:info@jjactionservices.com" 
+                      className="block font-body text-cool-gray hover:text-primary transition-colors cursor-pointer"
+                    >
+                      info@jjactionservices.com
+                    </a>
                     <p className="text-sm font-body text-cool-gray mt-2">We'll respond within 2 hours</p>
                   </div>
                 </div>

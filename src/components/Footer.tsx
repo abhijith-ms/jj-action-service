@@ -106,28 +106,14 @@ export default function Footer() {
                   +351 912 628 050
                 </a>
               </div>
-              <div className="flex items-start space-x-3">
-                <Mail className="w-4 h-4 text-emerald mt-0.5" />
-                <div className="space-y-1">
-                  <a
-                    href="mailto:info@jjactionservices.com"
-                    className="block hover:text-primary transition-colors cursor-pointer"
-                  >
-                    info@jjactionservices.com
-                  </a>
-                  <a
-                    href="mailto:james@jjactionservices.com"
-                    className="block hover:text-primary transition-colors cursor-pointer"
-                  >
-                    james@jjactionservices.com
-                  </a>
-                  <a
-                    href="mailto:mariajoaofernandes@jjactionservices.com"
-                    className="block hover:text-primary transition-colors cursor-pointer"
-                  >
-                    mariajoaofernandes@jjactionservices.com
-                  </a>
-                </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="w-4 h-4 text-emerald" />
+                <a
+                  href="mailto:info@jjactionservices.com"
+                  className="hover:text-primary transition-colors cursor-pointer"
+                >
+                  info@jjactionservices.com
+                </a>
               </div>
             </div>
           </div>

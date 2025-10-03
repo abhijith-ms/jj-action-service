@@ -1,27 +1,27 @@
-import { useState } from 'react'
-import { Menu, X } from 'lucide-react'
-import { Button } from '@/components/ui/button'
-import logo from '@/assets/JJ logo.png'
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import logo from "@/assets/JJ logo.png";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId)
+    const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ 
-        behavior: 'smooth',
-        block: 'start'
-      })
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
-    setIsMenuOpen(false)
-  }
+    setIsMenuOpen(false);
+  };
 
   const navItems = [
-    { label: 'Home', id: 'hero' },
-    { label: 'Services', id: 'services' },
-    { label: 'Contact', id: 'contact' },
-  ]
+    { label: "Home", id: "hero" },
+    { label: "Services", id: "services" },
+    { label: "Contact", id: "contact" },
+  ];
 
   return (
     <header className="bg-white shadow-md sticky top-0 z-50 border-b border-cool-gray/10">
@@ -30,12 +30,12 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <button
-              onClick={() => scrollToSection('hero')}
+              onClick={() => scrollToSection("hero")}
               className="flex items-center space-x-3 hover:opacity-90 transition-opacity"
             >
-              <img 
-                src={logo} 
-                alt="JJ Action Services Logo" 
+              <img
+                src={logo}
+                alt="JJ Action Services Logo"
                 className="h-12 w-auto"
               />
               <div className="hidden sm:block">
@@ -64,8 +64,8 @@ export default function Header() {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <Button 
-              onClick={() => scrollToSection('contact')}
+            <Button
+              onClick={() => scrollToSection("contact")}
               className="bg-primary hover:bg-primary-600 font-accent font-medium"
             >
               Contact Us
@@ -74,8 +74,8 @@ export default function Header() {
 
           {/* Mobile CTA Button and Menu */}
           <div className="md:hidden flex items-center space-x-3">
-            <Button 
-              onClick={() => scrollToSection('contact')}
+            <Button
+              onClick={() => scrollToSection("contact")}
               size="sm"
               className="bg-primary hover:bg-primary-600 font-accent font-medium text-sm px-4 py-2"
             >
@@ -108,5 +108,5 @@ export default function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }

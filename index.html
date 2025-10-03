@@ -115,14 +115,62 @@
   }
   </script>
   
-  <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <!-- Additional Schema Markup for Website -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "JJ Action Services",
+    "url": "https://jjactionservices.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://jjactionservices.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JJ Action Services",
+    "url": "https://jjactionservices.com",
+    "logo": "https://jjactionservices.com/assets/jj-full.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+351912628050",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Portuguese"]
+    },
+    "sameAs": []
+  }
+  </script>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CCB1NDREKC"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
+    gtag('config', 'G-CCB1NDREKC');
   </script>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://jjactionservices.com/" />
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="msapplication-TileColor" content="#2563eb" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=yes" />
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/src/main.tsx" as="script" />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//fonts.gstatic.com" />
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
