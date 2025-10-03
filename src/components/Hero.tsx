@@ -1,8 +1,13 @@
 import { ArrowRight, MapPin, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import fullLogo from "@/assets/jj full.png";
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/data/translations";
 
 export default function Hero() {
+  const { language } = useLanguage();
+  const t = translations[language];
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -33,7 +38,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 mb-8 shadow-sm border border-cool-gray/10">
             <MapPin className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium font-body text-cool-gray">
-              Serving Portugal
+              {t.servingPortugal}
             </span>
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
@@ -47,30 +52,28 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-navy mb-6 leading-tight">
-            Professional Services
-            <span className="block text-primary">You Can Trust</span>
+            {t.heroTitle}
+            <span className="block text-primary">{t.heroSubtitle}</span>
           </h1>
 
           {/* Subheading */}
           <p className="text-lg sm:text-xl font-body text-cool-gray mb-8 max-w-2xl mx-auto leading-relaxed">
-            From electrical work to carpentry, plumbing to car repairs - JJ
-            Action Services provides reliable, skilled professionals for all
-            your service needs in Portugal.
+            {t.heroDescription}
           </p>
 
           {/* Service Highlights */}
           <div className="flex flex-wrap justify-center gap-4 mb-10 text-sm font-body text-cool-gray">
             <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 border border-cool-gray/10">
               <div className="w-2 h-2 bg-emerald rounded-full"></div>
-              <span className="font-medium">Licensed & Insured</span>
+              <span className="font-medium">{t.licensedInsured}</span>
             </div>
             <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 border border-cool-gray/10">
               <div className="w-2 h-2 bg-emerald rounded-full"></div>
-              <span className="font-medium">9 Professional Services</span>
+              <span className="font-medium">{t.professionalServices}</span>
             </div>
             <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 border border-cool-gray/10">
               <div className="w-2 h-2 bg-emerald rounded-full"></div>
-              <span className="font-medium">Quick Response</span>
+              <span className="font-medium">{t.quickResponse}</span>
             </div>
           </div>
 
@@ -81,7 +84,7 @@ export default function Hero() {
               size="lg"
               className="bg-primary hover:bg-primary-600 text-white px-8 py-3 text-lg font-medium font-accent shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              View Our Services
+              {t.viewServices}
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
 
@@ -91,7 +94,7 @@ export default function Hero() {
               size="lg"
               className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-3 text-lg font-medium font-accent transition-all duration-300"
             >
-              Contact Us
+              {t.contactUs}
             </Button>
           </div>
         </div>

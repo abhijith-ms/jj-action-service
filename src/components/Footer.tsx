@@ -1,6 +1,11 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/data/translations";
 
 export default function Footer() {
+  const { language } = useLanguage();
+  const t = translations[language];
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -94,7 +99,7 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold font-heading mb-4">
-              Contact Info
+              {t.contactInfo}
             </h4>
             <div className="space-y-3 text-sm font-body text-cool-gray">
               <div className="flex items-center space-x-3">

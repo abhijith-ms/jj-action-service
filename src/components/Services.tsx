@@ -9,6 +9,8 @@ import {
   Shield,
   Sparkles
 } from "lucide-react"
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/data/translations";
 
 const services = [
   {
@@ -68,12 +70,14 @@ const services = [
 ]
 
 export default function Services() {
+  const { language } = useLanguage();
+  const t = translations[language];
   return (
     <section id="services" className="py-16 bg-gradient-to-b from-light-gray/30 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy mb-4">
-            Our Professional Services
+            {t.ourServices}
           </h2>
           
         </div>
@@ -113,7 +117,7 @@ export default function Services() {
         <div className="text-center">
           <div className="bg-light-gray rounded-lg p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-semibold font-heading text-navy mb-4">
-              Why Choose JJ Action Services?
+              {t.whyChoose}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="text-center">

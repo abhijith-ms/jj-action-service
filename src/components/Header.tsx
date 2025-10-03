@@ -2,9 +2,14 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/JJ logo.png";
+import LanguageToggle from "./LanguageToggle";
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/data/translations";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -18,9 +23,9 @@ export default function Header() {
   };
 
   const navItems = [
-    { label: "Home", id: "hero" },
-    { label: "Services", id: "services" },
-    { label: "Contact", id: "contact" },
+    { label: t.home, id: "hero" },
+    { label: t.services, id: "services" },
+    { label: t.contact, id: "contact" },
   ];
 
   return (
@@ -62,24 +67,26 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA Button - Desktop */}
-          <div className="hidden md:block">
+          {/* Language Toggle and CTA Button - Desktop */}
+          <div className="hidden md:flex items-center space-x-4">
+            <LanguageToggle />
             <Button
               onClick={() => scrollToSection("contact")}
               className="bg-primary hover:bg-primary-600 font-accent font-medium"
             >
-              Contact Us
+              {t.contactUs}
             </Button>
           </div>
 
-          {/* Mobile CTA Button and Menu */}
-          <div className="md:hidden flex items-center space-x-3">
+          {/* Mobile Language Toggle, CTA Button and Menu */}
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageToggle />
             <Button
               onClick={() => scrollToSection("contact")}
               size="sm"
-              className="bg-primary hover:bg-primary-600 font-accent font-medium text-sm px-4 py-2"
+              className="bg-primary hover:bg-primary-600 font-accent font-medium text-sm px-3 py-2"
             >
-              Contact Us
+              {t.contactUs}
             </Button>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
