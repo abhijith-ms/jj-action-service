@@ -12,59 +12,59 @@ import {
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/data/translations";
 
-const services = [
+const getServices = (t: any) => [
   {
     icon: Zap,
-    title: "Electrical Services",
-    description: "Professional electrical installations, repairs, and maintenance for homes and businesses.",
+    title: t.electricalServices,
+    description: t.electricalDesc,
     features: ["Wiring & Rewiring", "Panel Upgrades", "Lighting Installation", "Emergency Repairs"]
   },
   {
     icon: Droplets,
-    title: "Plumbing Services",
-    description: "Complete plumbing solutions from leak repairs to full system installations.",
+    title: t.plumbingServices,
+    description: t.plumbingDesc,
     features: ["Leak Detection", "Pipe Installation", "Drain Cleaning", "Water Heater Service"]
   },
   {
     icon: Car,
-    title: "Automotive Repair",
-    description: "Expert car maintenance and repair services to keep your vehicle running smoothly.",
+    title: t.automotiveRepair,
+    description: t.automotiveDesc,
     features: ["Engine Diagnostics", "Brake Service", "Oil Changes", "Tire Installation"]
   },
   {
     icon: Home,
-    title: "Home Maintenance",
-    description: "Comprehensive home maintenance services to keep your property in perfect condition.",
+    title: t.homeMaintenance,
+    description: t.homeMaintenanceDesc,
     features: ["Regular Inspections", "Preventive Care", "Seasonal Maintenance", "Emergency Fixes"]
   },
   {
     icon: Hammer,
-    title: "Carpentry Services",
-    description: "Custom carpentry work including furniture, cabinets, and structural repairs.",
+    title: t.carpentryServices,
+    description: t.carpentryDesc,
     features: ["Custom Furniture", "Cabinet Installation", "Deck Building", "Trim Work"]
   },
   {
     icon: Paintbrush,
-    title: "Painting Services",
-    description: "Interior and exterior painting services with premium materials and finishes.",
+    title: t.paintingServices,
+    description: t.paintingDesc,
     features: ["Interior Painting", "Exterior Painting", "Color Consultation", "Surface Preparation"]
   },
   {
     icon: Wrench,
-    title: "General Repairs",
-    description: "Versatile repair services for various household and commercial needs.",
+    title: t.generalRepairs,
+    description: t.generalRepairsDesc,
     features: ["Appliance Repair", "Fixture Installation", "Door & Window Repair", "General Maintenance"]
   },
   {
     icon: Sparkles,
-    title: "House Keeping/Cleaning",
-    description: "Professional cleaning services for homes and offices to maintain a spotless environment.",
+    title: t.houseCleaning,
+    description: t.houseCleaningDesc,
     features: ["Deep Cleaning", "Regular Maintenance", "Office Cleaning", "Move-in/Move-out"]
   },
   {
     icon: Shield,
-    title: "Emergency Services",
-    description: "24/7 emergency response for urgent repair and maintenance situations.",
+    title: t.emergencyServices,
+    description: t.emergencyDesc,
     features: ["24/7 Availability", "Rapid Response", "Emergency Repairs", "Damage Assessment"]
   }
 ]
@@ -72,6 +72,7 @@ const services = [
 export default function Services() {
   const { language } = useLanguage();
   const t = translations[language];
+  const services = getServices(t);
   return (
     <section id="services" className="py-16 bg-gradient-to-b from-light-gray/30 to-white">
       <div className="container mx-auto px-4">
@@ -124,27 +125,27 @@ export default function Services() {
                 <div className="w-12 h-12 bg-emerald/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Shield className="w-6 h-6 text-emerald" />
                 </div>
-                <h4 className="font-semibold font-heading text-navy mb-2">Licensed & Insured</h4>
+                <h4 className="font-semibold font-heading text-navy mb-2">{t.licensedInsured}</h4>
                 <p className="text-sm font-body text-cool-gray">
-                  Fully licensed professionals with comprehensive insurance coverage
+                  {t.licensedInsuredDesc}
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Zap className="w-6 h-6 text-primary" />
                 </div>
-                <h4 className="font-semibold font-heading text-navy mb-2">Quick Response</h4>
+                <h4 className="font-semibold font-heading text-navy mb-2">{t.quickResponse}</h4>
                 <p className="text-sm font-body text-cool-gray">
-                  Fast response times and efficient service delivery
+                  {t.quickResponseDesc}
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-terracotta/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Home className="w-6 h-6 text-terracotta" />
                 </div>
-                <h4 className="font-semibold font-heading text-navy mb-2">Local Expertise</h4>
+                <h4 className="font-semibold font-heading text-navy mb-2">{t.localExpertise}</h4>
                 <p className="text-sm font-body text-cool-gray">
-                  Deep understanding of Portuguese homes and regulations
+                  {t.localExpertiseDesc}
                 </p>
               </div>
             </div>

@@ -23,8 +23,7 @@ export default function Footer() {
               JJ Action Services
             </h3>
             <p className="font-body text-cool-gray mb-4 text-sm leading-relaxed">
-              Professional services you can trust. From electrical work to
-              carpentry, we provide reliable solutions across Portugal.
+              {t.companyDescription}
             </p>
             <div className="space-y-1 text-sm font-body text-cool-gray">
               <div className="flex items-center space-x-2">
@@ -38,25 +37,25 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h4 className="text-lg font-semibold font-heading mb-4">
-              Our Services
+              {t.services}
             </h4>
             <ul className="space-y-2 text-sm font-body text-cool-gray">
-              <li>Electrical Services</li>
-              <li>Plumbing Services</li>
-              <li>Automotive Repair</li>
-              <li>Home Maintenance</li>
-              <li>Carpentry Services</li>
-              <li>Painting Services</li>
-              <li>House Keeping/Cleaning</li>
-              <li>General Repairs</li>
-              <li>Emergency Services</li>
+              <li>{t.electricalServices}</li>
+              <li>{t.plumbingServices}</li>
+              <li>{t.automotiveRepair}</li>
+              <li>{t.homeMaintenance}</li>
+              <li>{t.carpentryServices}</li>
+              <li>{t.paintingServices}</li>
+              <li>{t.houseCleaning}</li>
+              <li>{t.generalRepairs}</li>
+              <li>{t.emergencyServices}</li>
             </ul>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="text-lg font-semibold font-heading mb-4">
-              Quick Links
+              {t.quickLinks}
             </h4>
             <ul className="space-y-2 text-sm font-body text-cool-gray">
               <li>
@@ -64,7 +63,7 @@ export default function Footer() {
                   onClick={() => scrollToSection("hero")}
                   className="hover:text-primary transition-colors"
                 >
-                  Home
+                  {t.home}
                 </button>
               </li>
               <li>
@@ -72,7 +71,7 @@ export default function Footer() {
                   onClick={() => scrollToSection("services")}
                   className="hover:text-primary transition-colors"
                 >
-                  Services
+                  {t.services}
                 </button>
               </li>
               <li>
@@ -80,17 +79,17 @@ export default function Footer() {
                   onClick={() => scrollToSection("contact")}
                   className="hover:text-primary transition-colors"
                 >
-                  Contact
+                  {t.contact}
                 </button>
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  About Us
+                  {t.aboutUs}
                 </a>
               </li>
               <li>
                 <a href="#" className="hover:text-primary transition-colors">
-                  Privacy Policy
+                  {t.privacyPolicy}
                 </a>
               </li>
             </ul>
@@ -128,16 +127,16 @@ export default function Footer() {
         <div className="border-t border-cool-gray/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm font-body text-cool-gray">
-              &copy; 2024 JJ Action Services. All rights reserved.
+              &copy; 2024 JJ Action Services. {t.allRightsReserved}.
             </div>
             <div className="flex items-center space-x-6 text-sm font-body text-cool-gray">
               <span className="flex items-center">
                 <div className="w-2 h-2 bg-emerald rounded-full mr-2"></div>
-                Licensed & Insured
+                {t.licensedInsured}
               </span>
               <span className="flex items-center">
                 <div className="w-2 h-2 bg-terracotta rounded-full mr-2"></div>
-                24/7 Emergency Service
+                {t.emergencyService}
               </span>
             </div>
           </div>

@@ -38,7 +38,7 @@ export default function Contact() {
                     >
                       +351 912 628 050
                     </a>
-                    <p className="text-sm font-body text-cool-gray">Available 24/7 for emergencies</p>
+                    <p className="text-sm font-body text-cool-gray">{t.available24_7}</p>
                   </div>
                 </div>
 
@@ -54,7 +54,7 @@ export default function Contact() {
                     >
                       info@jjactionservices.com
                     </a>
-                    <p className="text-sm font-body text-cool-gray mt-2">We'll respond within 2 hours</p>
+                    <p className="text-sm font-body text-cool-gray mt-2">{t.respondWithin2Hours}</p>
                   </div>
                 </div>
 
@@ -66,7 +66,7 @@ export default function Contact() {
                     <h4 className="font-semibold font-heading text-navy mb-1">{t.address}</h4>
                     <p className="font-body text-cool-gray">Rua da Sofia, 1 ESQ</p>
                     <p className="font-body text-cool-gray">4705-453 Celeiros</p>
-                    <p className="text-sm font-body text-cool-gray">Serving all of Portugal</p>
+                    <p className="text-sm font-body text-cool-gray">{t.servingAllPortugal}</p>
                   </div>
                 </div>
 
@@ -74,31 +74,31 @@ export default function Contact() {
               </div>
 
               <div className="bg-light-gray/30 rounded-lg p-6">
-                <h4 className="font-semibold font-heading text-navy mb-4">Our Service Guarantee</h4>
+                <h4 className="font-semibold font-heading text-navy mb-4">{t.serviceGuarantee}</h4>
                 <ul className="space-y-3 text-sm font-body text-cool-gray">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-emerald rounded-full mr-3"></div>
-                    Free quotes and consultations
+                    {t.freeQuotes}
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-emerald rounded-full mr-3"></div>
-                    Licensed and insured professionals
+                    {t.licensedProfessionals}
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-emerald rounded-full mr-3"></div>
-                    100% satisfaction guarantee
+                    {t.satisfactionGuarantee}
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-emerald rounded-full mr-3"></div>
-                    Transparent pricing with no hidden fees
+                    {t.transparentPricing}
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-emerald rounded-full mr-3"></div>
-                    Quick response times
+                    {t.quickResponseTimes}
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-emerald rounded-full mr-3"></div>
-                    Professional and reliable service
+                    {t.professionalService}
                   </li>
                 </ul>
               </div>
