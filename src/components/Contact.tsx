@@ -64,8 +64,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold font-heading text-navy mb-1">{t.address}</h4>
-                    <p className="font-body text-cool-gray">Rua da Sofia, 1 ESQ</p>
-                    <p className="font-body text-cool-gray">4705-453 Celeiros</p>
+                    <p className="font-body text-cool-gray">Avenida da Liberdade 615, 1º Piso</p>
+                    <p className="font-body text-cool-gray">4710-251 Braga</p>
                     <p className="text-sm font-body text-cool-gray">{t.servingAllPortugal}</p>
                   </div>
                 </div>

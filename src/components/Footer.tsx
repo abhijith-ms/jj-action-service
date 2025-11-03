@@ -28,9 +28,9 @@ export default function Footer() {
             <div className="space-y-1 text-sm font-body text-cool-gray">
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
-                <span>Rua da Sofia, 1 ESQ</span>
+                <span>Avenida da Liberdade 615, 1º Piso</span>
               </div>
-              <div className="ml-6">4705-453 Celeiros</div>
+              <div className="ml-6">4710-251 Braga</div>
             </div>
           </div>
 
