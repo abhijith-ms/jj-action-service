@@ -57,11 +57,11 @@ export default function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold font-heading text-navy mb-4">
-            What Our Customers Say
+            O Que Dizem Os Nossos Clientes
           </h2>
           <p className="text-lg font-body text-cool-gray max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied customers 
-            across Portugal have to say about our services.
+            Não acredite apenas na nossa palavra. Veja o que os nossos clientes 
+            satisfeitos em Portugal dizem sobre os nossos serviços.
           </p>
         </div>
 
@@ -108,15 +108,15 @@ export default function Testimonials() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div>
               <div className="text-3xl font-bold font-heading text-primary mb-2">500+</div>
-              <div className="text-sm font-body text-cool-gray">Happy Customers</div>
+              <div className="text-sm font-body text-cool-gray">Clientes Satisfeitos</div>
             </div>
             <div>
               <div className="text-3xl font-bold font-heading text-emerald mb-2">4.9/5</div>
-              <div className="text-sm font-body text-cool-gray">Average Rating</div>
+              <div className="text-sm font-body text-cool-gray">Avaliação Média</div>
             </div>
             <div>
               <div className="text-3xl font-bold font-heading text-terracotta mb-2">24/7</div>
-              <div className="text-sm font-body text-cool-gray">Emergency Support</div>
+              <div className="text-sm font-body text-cool-gray">Suporte de Emergência</div>
             </div>
           </div>
         </div>
