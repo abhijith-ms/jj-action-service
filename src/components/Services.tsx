@@ -125,23 +125,23 @@ export default function Services() {
                 <div className="w-12 h-12 bg-emerald/10 rounded-full flex items-center justify-center mx-auto mb-3">
                   <Shield className="w-6 h-6 text-emerald" />
                 </div>
-                <h4 className="font-semibold font-heading text-navy mb-2">{t.licensedInsured}</h4>
+                <h4 className="font-semibold font-heading text-navy mb-2">{t.verifiedTalent}</h4>
                 <p className="text-sm font-body text-cool-gray">
                   {t.licensedInsuredDesc}
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Zap className="w-6 h-6 text-primary" />
+                  <TrendingUp className="w-6 h-6 text-primary" />
                 </div>
-                <h4 className="font-semibold font-heading text-navy mb-2">{t.quickResponse}</h4>
+                <h4 className="font-semibold font-heading text-navy mb-2">{t.quickPlacement}</h4>
                 <p className="text-sm font-body text-cool-gray">
                   {t.quickResponseDesc}
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-terracotta/10 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <Home className="w-6 h-6 text-terracotta" />
+                  <Briefcase className="w-6 h-6 text-terracotta" />
                 </div>
                 <h4 className="font-semibold font-heading text-navy mb-2">{t.localExpertise}</h4>
                 <p className="text-sm font-body text-cool-gray">

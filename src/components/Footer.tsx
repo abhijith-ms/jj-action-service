@@ -40,15 +40,15 @@ export default function Footer() {
               {t.services}
             </h4>
             <ul className="space-y-2 text-sm font-body text-cool-gray">
-              <li>{t.electricalServices}</li>
-              <li>{t.plumbingServices}</li>
-              <li>{t.automotiveRepair}</li>
-              <li>{t.homeMaintenance}</li>
-              <li>{t.carpentryServices}</li>
-              <li>{t.paintingServices}</li>
-              <li>{t.houseCleaning}</li>
-              <li>{t.generalRepairs}</li>
-              <li>{t.emergencyServices}</li>
+              <li>{t.talentSourcing}</li>
+              <li>{t.candidatePlacement}</li>
+              <li>{t.industrySpecialists}</li>
+              <li>{t.onboardingSupport}</li>
+              <li>{t.retentionPlans}</li>
+              <li>{t.diversityInclusion}</li>
+              <li>{t.legalCompliance}</li>
+              <li>{t.customSolutions}</li>
+              <li>{t.ongoingSupport}</li>
             </ul>
           </div>
 
@@ -132,7 +132,7 @@ export default function Footer() {
             <div className="flex items-center space-x-6 text-sm font-body text-cool-gray">
               <span className="flex items-center">
                 <div className="w-2 h-2 bg-emerald rounded-full mr-2"></div>
-                {t.licensedInsured}
+                {t.verifiedTalent}
               </span>
               <span className="flex items-center">
                 <div className="w-2 h-2 bg-terracotta rounded-full mr-2"></div>
