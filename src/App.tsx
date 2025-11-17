@@ -5,6 +5,7 @@ import Services from "@/components/Services"
 import Contact from "@/components/Contact"
 import Footer from "@/components/Footer"
 import Maintenance from "@/components/Maintenance"
+import WhatsAppButton from "@/components/WhatsAppButton"
 
 // Toggle maintenance mode here
 const MAINTENANCE_MODE = false // Set to true to enable maintenance mode
@@ -24,6 +25,7 @@ function App() {
       <Services />
       <Contact />
       <Footer />
+      <WhatsAppButton />
     </div>
   )
 }
