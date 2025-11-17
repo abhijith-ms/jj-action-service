@@ -8,10 +8,13 @@ import image2 from "@/assets/jj images/2.webp";
 import image3 from "@/assets/jj images/3.webp";
 import image4 from "@/assets/jj images/4.webp";
 import image5 from "@/assets/jj images/5.webp";
+import { useState, useEffect } from "react";
 
 export default function Hero() {
   const { language } = useLanguage();
   const t = translations[language];
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const images = [image1, image2, image3, image4, image5];
   
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -23,15 +26,24 @@ export default function Hero() {
     }
   };
 
+  // Auto-advance carousel
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [images.length]);
+
   return (
-    <section
-      id="hero"
-      className="bg-gradient-to-br from-white to-light-gray py-12 lg:py-20"
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          {/* Left Content */}
-          <div className="text-center lg:text-left order-2 lg:order-1">
+    <>
+      <section
+        id="hero"
+        className="bg-gradient-to-br from-white to-light-gray py-12 lg:py-20"
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left Content */}
+            <div className="text-center lg:text-left">
             {/* Logo */}
             <div className="mb-6 animate-scale-in">
               <img
@@ -106,8 +118,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Image Grid */}
-          <div className="order-1 lg:order-2 animate-fade-in">
+          {/* Right Image Grid - Hidden on mobile, visible on desktop */}
+          <div className="hidden lg:block animate-fade-in">
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               {/* Large featured image */}
               <div className="col-span-2 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300 group">
@@ -155,5 +167,47 @@ export default function Hero() {
         </div>
       </div>
     </section>
+
+    {/* Mobile Image Carousel - Only visible on mobile */}
+    <section className="lg:hidden bg-white py-8">
+      <div className="container mx-auto px-4">
+        <div className="relative">
+          {/* Carousel Container */}
+          <div className="relative h-64 rounded-2xl overflow-hidden shadow-xl">
+            {images.map((img, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-opacity duration-700 ${
+                  index === currentSlide ? "opacity-100" : "opacity-0"
+                }`}
+              >
+                <img
+                  src={img}
+                  alt={`Recruitment services ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+
+          {/* Carousel Indicators */}
+          <div className="flex justify-center gap-2 mt-4">
+            {images.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === currentSlide
+                    ? "bg-primary w-8"
+                    : "bg-cool-gray/30"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+    </>
   );
 }
