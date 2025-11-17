@@ -48,7 +48,6 @@ export default function Footer() {
               <li>{t.diversityInclusion}</li>
               <li>{t.legalCompliance}</li>
               <li>{t.customSolutions}</li>
-              <li>{t.ongoingSupport}</li>
             </ul>
           </div>
 
