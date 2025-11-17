@@ -7,7 +7,7 @@ import Footer from "@/components/Footer"
 import Maintenance from "@/components/Maintenance"
 
 // Toggle maintenance mode here
-const MAINTENANCE_MODE = true // Set to true to enable maintenance mode
+const MAINTENANCE_MODE = false // Set to true to enable maintenance mode
 
 function App() {
   // Show maintenance page if enabled
