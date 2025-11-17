@@ -1,71 +1,71 @@
 import { 
-  Wrench, 
-  Zap, 
-  Droplets, 
-  Car, 
-  Home, 
-  Paintbrush, 
-  Hammer, 
+  Users, 
+  UserCheck, 
+  Briefcase, 
+  TrendingUp, 
   Shield,
-  Sparkles
+  Heart,
+  FileCheck,
+  Settings,
+  Headphones
 } from "lucide-react"
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/data/translations";
 
 const getServices = (t: any) => [
   {
-    icon: Zap,
-    title: t.electricalServices,
-    description: t.electricalDesc,
-    features: ["Wiring & Rewiring", "Panel Upgrades", "Lighting Installation", "Emergency Repairs"]
+    icon: Users,
+    title: t.talentSourcing,
+    description: t.talentSourcingDesc,
+    features: ["Pre-screened Candidates", "Skills Assessment", "Background Verification", "Cultural Fit Analysis"]
   },
   {
-    icon: Droplets,
-    title: t.plumbingServices,
-    description: t.plumbingDesc,
-    features: ["Leak Detection", "Pipe Installation", "Drain Cleaning", "Water Heater Service"]
+    icon: UserCheck,
+    title: t.candidatePlacement,
+    description: t.candidatePlacementDesc,
+    features: ["Fast Placement", "Legal Compliance", "Contract Support", "Onboarding Coordination"]
   },
   {
-    icon: Car,
-    title: t.automotiveRepair,
-    description: t.automotiveDesc,
-    features: ["Engine Diagnostics", "Brake Service", "Oil Changes", "Tire Installation"]
+    icon: Briefcase,
+    title: t.industrySpecialists,
+    description: t.industrySpecialistsDesc,
+    features: ["Construction", "Hospitality", "Logistics", "Technology"]
   },
   {
-    icon: Home,
-    title: t.homeMaintenance,
-    description: t.homeMaintenanceDesc,
-    features: ["Regular Inspections", "Preventive Care", "Seasonal Maintenance", "Emergency Fixes"]
+    icon: TrendingUp,
+    title: t.onboardingSupport,
+    description: t.onboardingSupportDesc,
+    features: ["Integration Planning", "Cultural Training", "Workplace Adaptation", "Performance Tracking"]
   },
   {
-    icon: Hammer,
-    title: t.carpentryServices,
-    description: t.carpentryDesc,
-    features: ["Custom Furniture", "Cabinet Installation", "Deck Building", "Trim Work"]
-  },
-  {
-    icon: Paintbrush,
-    title: t.paintingServices,
-    description: t.paintingDesc,
-    features: ["Interior Painting", "Exterior Painting", "Color Consultation", "Surface Preparation"]
-  },
-  {
-    icon: Wrench,
-    title: t.generalRepairs,
-    description: t.generalRepairsDesc,
-    features: ["Appliance Repair", "Fixture Installation", "Door & Window Repair", "General Maintenance"]
-  },
-  {
-    icon: Sparkles,
-    title: t.houseCleaning,
-    description: t.houseCleaningDesc,
-    features: ["Deep Cleaning", "Regular Maintenance", "Office Cleaning", "Move-in/Move-out"]
+    icon: Heart,
+    title: t.retentionPlans,
+    description: t.retentionPlansDesc,
+    features: ["Follow-up Services", "Satisfaction Surveys", "Retention Strategies", "Long-term Support"]
   },
   {
     icon: Shield,
-    title: t.emergencyServices,
-    description: t.emergencyDesc,
-    features: ["24/7 Availability", "Rapid Response", "Emergency Repairs", "Damage Assessment"]
+    title: t.diversityInclusion,
+    description: t.diversityInclusionDesc,
+    features: ["Cultural Diversity", "Inclusive Hiring", "Workplace Integration", "Diversity Training"]
+  },
+  {
+    icon: FileCheck,
+    title: t.legalCompliance,
+    description: t.legalComplianceDesc,
+    features: ["Work Authorization", "Legal Documentation", "Compliance Verification", "Regulatory Support"]
+  },
+  {
+    icon: Settings,
+    title: t.customSolutions,
+    description: t.customSolutionsDesc,
+    features: ["Tailored Strategies", "Industry-specific", "Company Culture Fit", "Flexible Approach"]
+  },
+  {
+    icon: Headphones,
+    title: t.ongoingSupport,
+    description: t.ongoingSupportDesc,
+    features: ["Continuous Support", "Consultation Services", "Issue Resolution", "Partnership Management"]
   }
 ]
 
