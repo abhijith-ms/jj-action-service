@@ -26,17 +26,17 @@ export default function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           {/* Logo */}
-          <div className="mb-8">
+          <div className="mb-8 animate-scale-in">
             <img
               src={fullLogo}
-              alt="JJ Action Services - Professional Services"
-              className="h-24 sm:h-32 lg:h-40 w-auto mx-auto mb-6"
+              alt="JJ Action Services - Recruitment Services"
+              className="h-24 sm:h-32 lg:h-40 w-auto mx-auto mb-6 hover:scale-105 transition-transform duration-300"
             />
           </div>
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 mb-8 shadow-sm border border-cool-gray/10">
-            <MapPin className="w-4 h-4 text-primary" />
+          <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-4 py-2 mb-8 shadow-sm border border-cool-gray/10 animate-fade-in hover:shadow-md transition-shadow">
+            <MapPin className="w-4 h-4 text-primary animate-pulse-slow" />
             <span className="text-sm font-medium font-body text-cool-gray">
               {t.servingPortugal}
             </span>
@@ -51,29 +51,29 @@ export default function Hero() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-navy mb-6 leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading text-navy mb-6 leading-tight animate-slide-in-left">
             {t.heroTitle}
-            <span className="block text-primary">{t.heroSubtitle}</span>
+            <span className="block text-primary animate-slide-in-right">{t.heroSubtitle}</span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg sm:text-xl font-body text-cool-gray mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl font-body text-cool-gray mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-in">
             {t.heroDescription}
           </p>
 
           {/* Service Highlights */}
           <div className="flex flex-wrap justify-center gap-4 mb-10 text-sm font-body text-cool-gray">
-            <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 border border-cool-gray/10">
-              <div className="w-2 h-2 bg-emerald rounded-full"></div>
-              <span className="font-medium">{t.licensedInsured}</span>
+            <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 border border-cool-gray/10 hover:shadow-md transition-shadow">
+              <div className="w-2 h-2 bg-emerald rounded-full animate-pulse"></div>
+              <span className="font-medium">{t.verifiedTalent}</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 border border-cool-gray/10">
-              <div className="w-2 h-2 bg-emerald rounded-full"></div>
-              <span className="font-medium">{t.professionalServices}</span>
+            <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 border border-cool-gray/10 hover:shadow-md transition-shadow">
+              <div className="w-2 h-2 bg-emerald rounded-full animate-pulse"></div>
+              <span className="font-medium">{t.companiesServed}</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 border border-cool-gray/10">
-              <div className="w-2 h-2 bg-emerald rounded-full"></div>
-              <span className="font-medium">{t.quickResponse}</span>
+            <div className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 border border-cool-gray/10 hover:shadow-md transition-shadow">
+              <div className="w-2 h-2 bg-emerald rounded-full animate-pulse"></div>
+              <span className="font-medium">{t.quickPlacement}</span>
             </div>
           </div>
 
