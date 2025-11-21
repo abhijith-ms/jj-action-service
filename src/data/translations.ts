@@ -9,7 +9,7 @@ export const translations = {
     // Hero Section
     heroTitle: "Connecting Talent",
     heroSubtitle: "Building Portugal's Future",
-    heroDescription: "JJ Action Services bridges Portuguese companies with skilled Indian professionals legally residing in Portugal. We create fair, diverse job opportunities that drive growth and inclusion.",
+    heroDescription: "JJ Action Services bridges Portuguese companies with skilled international professionals legally residing in Portugal. We create fair, diverse job opportunities that drive growth and inclusion.",
     verifiedTalent: "Verified Talent Pool",
     companiesServed: "Companies Served",
     quickPlacement: "Quick Placement",
@@ -27,7 +27,7 @@ export const translations = {
     
     // Service Items
     talentSourcing: "Talent Sourcing",
-    talentSourcingDesc: "We identify and pre-screen qualified Indian professionals living legally in Portugal, matching them to your specific business needs.",
+    talentSourcingDesc: "We identify and pre-screen qualified international professionals living legally in Portugal, matching them to your specific business needs.",
     candidatePlacement: "Candidate Placement",
     candidatePlacementDesc: "Efficient placement process ensuring the right fit for both companies and candidates, with full legal compliance.",
     industrySpecialists: "Industry Specialists",
@@ -66,7 +66,7 @@ export const translations = {
     professionalService: "Professional and reliable service",
     
     // Footer
-    companyDescription: "Connecting Portuguese companies with skilled Indian professionals. We create fair, diverse job opportunities that drive growth and inclusion across Portugal.",
+    companyDescription: "Connecting Portuguese companies with skilled international professionals. We create fair, diverse job opportunities that drive growth and inclusion across Portugal.",
     quickLinks: "Quick Links",
     aboutUs: "About Us",
     privacyPolicy: "Privacy Policy",
@@ -85,7 +85,7 @@ export const translations = {
     // Hero Section
     heroTitle: "Conectando Talentos",
     heroSubtitle: "Construindo o Futuro de Portugal",
-    heroDescription: "A JJ Action Services conecta empresas portuguesas com profissionais indianos qualificados que residem legalmente em Portugal. Criamos oportunidades de emprego justas e diversas que impulsionam o crescimento e a inclusão.",
+    heroDescription: "A JJ Action Services conecta empresas portuguesas com profissionais internacionais qualificados que residem legalmente em Portugal. Criamos oportunidades de emprego justas e diversas que impulsionam o crescimento e a inclusão.",
     verifiedTalent: "Talentos Verificados",
     companiesServed: "Empresas Servidas",
     quickPlacement: "Colocação Rápida",
@@ -103,7 +103,7 @@ export const translations = {
     
     // Service Items
     talentSourcing: "Sourcing de Talentos",
-    talentSourcingDesc: "Identificamos e pré-selecionamos profissionais indianos qualificados que vivem legalmente em Portugal, combinando-os com as suas necessidades específicas de negócio.",
+    talentSourcingDesc: "Identificamos e pré-selecionamos profissionais internacionais qualificados que vivem legalmente em Portugal, combinando-os com as suas necessidades específicas de negócio.",
     candidatePlacement: "Colocação de Candidatos",
     candidatePlacementDesc: "Processo de colocação eficiente garantindo o ajuste certo para empresas e candidatos, com total conformidade legal.",
     industrySpecialists: "Especialistas por Indústria",
@@ -142,7 +142,7 @@ export const translations = {
     professionalService: "Serviço profissional e confiável",
     
     // Footer
-    companyDescription: "Conectando empresas portuguesas com profissionais indianos qualificados. Criamos oportunidades de emprego justas e diversas que impulsionam o crescimento e a inclusão em Portugal.",
+    companyDescription: "Conectando empresas portuguesas com profissionais internacionais qualificados. Criamos oportunidades de emprego justas e diversas que impulsionam o crescimento e a inclusão em Portugal.",
     quickLinks: "Links Rápidos",
     aboutUs: "Sobre Nós",
     privacyPolicy: "Política de Privacidade",

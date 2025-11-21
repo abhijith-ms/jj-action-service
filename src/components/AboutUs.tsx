@@ -14,7 +14,7 @@ export default function AboutUs() {
       missionText: "To create fair and diverse job opportunities within the Portuguese labor market, promoting both skills recognition and inclusion while addressing the critical labor shortage facing Portuguese businesses.",
       
       problemTitle: "The Challenge",
-      problemText: "Portuguese companies face significant labor shortages in key sectors, especially technical and operational areas. Meanwhile, hundreds of skilled Indian professionals living legally in Portugal are eager to work but encounter barriers to access.",
+      problemText: "Portuguese companies face significant labor shortages in key sectors, especially technical and operational areas. Meanwhile, hundreds of skilled international professionals living legally in Portugal are eager to work but encounter barriers to access.",
       
       solutionTitle: "Our Solution",
       solutionText: "We act as an efficient and human bridge between companies and professionals. We identify business needs, select suitable candidates, and facilitate their smooth integration into the workplace.",
@@ -32,13 +32,13 @@ export default function AboutUs() {
     pt: {
       title: "Sobre a JJ Action Services",
       subtitle: "Conectando Talentos, Construindo Futuros",
-      intro: "A JJ Action Services é uma startup portuguesa dedicada a conectar profissionais indianos qualificados que residem legalmente em Portugal com empresas portuguesas que procuram talento qualificado.",
+      intro: "A JJ Action Services é uma startup portuguesa dedicada a conectar profissionais internacionais qualificados que residem legalmente em Portugal com empresas portuguesas que procuram talento qualificado.",
       
       missionTitle: "Nossa Missão",
       missionText: "Criar oportunidades de emprego justas e diversas no mercado de trabalho português, promovendo o reconhecimento de competências e a inclusão, ao mesmo tempo que abordamos a escassez crítica de mão de obra que as empresas portuguesas enfrentam.",
       
       problemTitle: "O Desafio",
-      problemText: "As empresas portuguesas enfrentam escassez significativa de mão de obra em setores-chave, especialmente em áreas técnicas e operacionais. Enquanto isso, centenas de profissionais indianos qualificados que vivem legalmente em Portugal estão ansiosos para trabalhar, mas encontram barreiras de acesso.",
+      problemText: "As empresas portuguesas enfrentam escassez significativa de mão de obra em setores-chave, especialmente em áreas técnicas e operacionais. Enquanto isso, centenas de profissionais internacionais qualificados que vivem legalmente em Portugal estão ansiosos para trabalhar, mas encontram barreiras de acesso.",
       
       solutionTitle: "Nossa Solução",
       solutionText: "Atuamos como uma ponte eficiente e humana entre empresas e profissionais. Identificamos necessidades empresariais, selecionamos candidatos adequados e facilitamos sua integração suave no local de trabalho.",
