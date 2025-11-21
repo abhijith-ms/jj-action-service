@@ -8,7 +8,7 @@ export default function AboutUs() {
     en: {
       title: "About JJ Action Services",
       subtitle: "Bridging Talent, Building Futures",
-      intro: "JJ Action Services is a Portuguese startup dedicated to connecting skilled Indian professionals legally residing in Portugal with Portuguese companies seeking qualified talent.",
+      intro: "JJ Action Services is a Portuguese startup dedicated to connecting skilled professionals legally residing in Portugal with Portuguese companies seeking qualified talent.",
       
       missionTitle: "Our Mission",
       missionText: "To create fair and diverse job opportunities within the Portuguese labor market, promoting both skills recognition and inclusion while addressing the critical labor shortage facing Portuguese businesses.",
